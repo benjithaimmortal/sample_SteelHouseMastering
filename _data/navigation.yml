@@ -1,8 +1,8 @@
 - name: Home
-  link: /monjibram/
+  link: /
 - name: Services
-  link: monjibram/services/
+  link: /services/
 - name: Contact
-  link: monjibram/contact/
+  link: /contact/
 - name: Samples
-  link: monjibram/samples/
+  link: /samples/
