@@ -1,21 +1,36 @@
+@font-face {
+  font-family: "Blackout";
+  src: url("../fonts/title_font.ttf");
+}
+
+@font-face {
+  font-family: "Whiteout";
+  src: url("../fonts/subtitle_font.ttf");
+}
+
 .current_link { color: green; }
+
+.barney {
+  margin: 0 10%;
+  border: 5px dashed black;
+}
 
 body {
   margin: 0 auto;
   background: #ececec;
   background-attachment: fixed;
   p {
-    margin: 0 15% 2rem 10%;
+    margin: 0 20% 2rem 15%;
     text-align: justify;
     font-family: "Helvetica", sans-serif;
-    font-size: calc(.9em + 0.5vw);
+    font-size: calc(.6em + 0.5vw);
     line-height: calc(0.9em + 0.5vw);
     color: rgb(31, 31, 31);
   }
 }
 
 h2 {
-  margin: 0 20%;
+  margin: 0 10%;
   font-size: calc(.5em + 1vw);
   color: #0b693e;
   font-family: "Helvetica", serif;
@@ -24,13 +39,14 @@ h2 {
 img {
   max-width: 50%;
   max-height: auto;
-  object-fit: cover;
 }
 
-.main {
-  text-align: center;
-  font-family: "Helvetica", sans-serif;
-  font-size: calc(.9em + 0.5vw);
-  line-height: calc(0.9em + 0.5vw);
-  color: #EEEEEE;
+.flexlist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 30%;
+}
+.flexchild {
+  font: bold 16px Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
