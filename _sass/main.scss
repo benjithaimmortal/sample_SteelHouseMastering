@@ -1,3 +1,36 @@
-.current {
-  color: green
+.current_link { color: green; }
+
+body {
+  margin: 0 auto;
+  background: #ececec;
+  background-attachment: fixed;
+  p {
+    margin: 0 15% 2rem 10%;
+    text-align: justify;
+    font-family: "Helvetica", sans-serif;
+    font-size: calc(.9em + 0.5vw);
+    line-height: calc(0.9em + 0.5vw);
+    color: rgb(31, 31, 31);
+  }
+}
+
+h2 {
+  margin: 0 20%;
+  font-size: calc(.5em + 1vw);
+  color: #0b693e;
+  font-family: "Helvetica", serif;
+}
+
+img {
+  max-width: 50%;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.main {
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(.9em + 0.5vw);
+  line-height: calc(0.9em + 0.5vw);
+  color: #EEEEEE;
 }

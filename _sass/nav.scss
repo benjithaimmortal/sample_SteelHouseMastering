@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Blackout";
+  src: url("../fonts/title_font.ttf");
+}
+
+@font-face {
+  font-family: "Whiteout";
+  src: url("../fonts/subtitle_font.ttf");
+}
+
+.nav { background: black; }
+
+.title-text {
+  margin: 0 auto;
+  font: bold calc(3vw + .6em) 'Blackout', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: -.5rem;
+}
+
+.under-title {
+  font: bold calc(1vw + .6em) 'Whiteout', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.nav-text {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-top: 2px solid #457727;
+  border-bottom: 2px solid #457727;
+  font: calc(1.5vw + .3rem) 'Franklin Gothic Medium';
+  letter-spacing: 4px;
+  a {
+    padding: 0 1rem 0 1rem;
+    &:link {
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: #E0E0E0;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav-text {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
