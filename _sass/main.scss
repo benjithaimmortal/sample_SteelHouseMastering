@@ -12,9 +12,6 @@
 
 
 body {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   margin: 0 auto;
   background: #ececec;
   background-attachment: fixed;
@@ -41,7 +38,6 @@ h2 {
 }
 
 .intro { margin: 0 10% 10px 12%; }
-
 
 .bio { 
   float: left;
