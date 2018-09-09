@@ -6,7 +6,7 @@
     <ul class="nav-text">
       {% for item in site.data.navigation %}
       <li>
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current_link"{% endif %}>
+        <a href="{{ item.link }}">
           {{ item.name }}
         </a>
       </li>
