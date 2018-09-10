@@ -1,10 +1,19 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
 .footer {
   margin-bottom: 0;
+  margin-top: 0;
   padding: 15px 15px;
+  font: calc(2vw - .25rem) "Helvetica", sans-serif;
   display: flex;
   flex-flow: row wrap;
-  justify-content: right;
+  justify-content: flex-end;
   background: #252525;
-  color: #ececec;
+  color: #b9b9b9;
   list-style: none;
+}
+
+.site-emblem {
+  color: #9e9e9e;
+  padding: 15px auto;
 }

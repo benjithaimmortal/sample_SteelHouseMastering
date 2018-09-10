@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   background: #ececec;
   background-attachment: fixed;
+  min-height: 100%
 }
 
 section {
@@ -23,18 +24,16 @@ section {
 
 p {
   text-align: justify;
-  font-family: "Helvetica", sans-serif;
-  font-size: calc(.6em + 0.5vw);
+  font: calc(.6em + 0.5vw) "Helvetica", sans-serif;
   line-height: calc(0.9em + 0.5vw);
   color: rgb(31, 31, 31);
 }
 
 h2 {
   margin-top: 3%;
-  font-size: calc(.5em + 1vw);
   text-align: center;
   color: #0b693e;
-  font-family: 'Kaushan Script', cursive;
+  font: calc(.5em + 1vw) "Kaushan Script", cursive;
 }
 
 .intro { margin: 0 10% 10px 12%; }
@@ -58,8 +57,7 @@ h2 {
   list-style: none;
   margin: 0 20% 2rem 12%;
   border: 0;
-  font-family: "Helvetica", sans-serif;
-  font-size: calc(.6em + 0.5vw);
+  font: calc(.6em + 0.5vw) "Helvetica", sans-serif;
   text-align: center;
   line-height: calc(0.9em + 0.5vw);
   color: rgb(31, 31, 31);
