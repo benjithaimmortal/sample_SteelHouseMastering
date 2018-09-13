@@ -1,6 +1,9 @@
 .nav {
-  background: #252525;
-  min-width: calc(10vw + 10%);
+  background: $background;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  flex-grow: 0;
 }
 
 .title-text {
@@ -8,7 +11,7 @@
   font: bold calc(3vw + .6em) 'Blackout', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
   margin-bottom: -.5rem;
 }
 
@@ -17,7 +20,7 @@
   color: white;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .nav-text {

@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
-    {% include nav.html %}
+    <div class="wrapper">
+      {% include nav.html %}
     
-    <div>
+      {% include contact_form.html %}
+    
       {{ content }}
-    </div>
-    {% include contact_form.html %}
 
-    {% include foot.html %}
+      {% include foot.html %}
+    </div>
   </body>
 </html>

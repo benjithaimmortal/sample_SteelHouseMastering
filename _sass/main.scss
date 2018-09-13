@@ -10,16 +10,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
+$background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+url(../images/music_equipment.webp);
 
 body {
   margin: 0 auto;
   background: #ececec;
+  background-size: cover;
   background-attachment: fixed;
-  min-height: 100%
+  width: 100%;
 }
 
 section {
-  margin-bottom: 2rem;
+  border-radius: 10px;
+  background: #ececec;
 }
 
 p {
@@ -30,24 +34,62 @@ p {
 }
 
 h2 {
-  margin-top: 3%;
   text-align: center;
   color: #0b693e;
   font: calc(.5em + 1vw) "Kaushan Script", cursive;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@mixin snippet {
+  height: 2rem;
+  background: $background;
+  // min-width: calc(10vw + 10%);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 2rem 0 2rem 0;
+}
+
+.snippet-bar {
+  @include snippet;  
+  width: 100%;
+  margin: auto;
+}
+
+.snippet-left {
+  @include snippet;
+  width: 70%;
+  border-radius: 0 35px 35px 0;
+}
+
+.snippet-right {
+  @include snippet;
+  margin-left: 30%;
+  width: 70%;
+  border-radius: 35px 0 0 35px;
+}
+
 .intro { margin: 0 10% 10px 12%; }
 
-.bio { 
+.bio-container {
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+
+.bio {
   float: left;
   margin: 0 0 0 9%;
   max-width: 45%;
 }
 .bio-pic {
   float: right;
+  border-radius: 5px;
   margin-right: 3%;
   max-width: 40%;
-
 }
 
 .services {
@@ -67,5 +109,16 @@ h2 {
     background: #0b693e;
     color: #ececec;
     border-radius: 10px;
+  }
+}
+
+.contact-container {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../images/amp_mic.webp);
+  width: 50%;
+  height: 20%;
+  margin: 0 auto 3rem;
+  p {
+    text-align: center;
   }
 }

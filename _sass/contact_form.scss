@@ -1,16 +1,21 @@
 #contactform, .form {
-  margin-top: 2rem;
+  margin: 3.5rem 2rem 1rem 2rem;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
 }
+
+@media all and (max-width: 600px) {
+  #contactform, .form {
+    flex-flow: column wrap;
+  }
+}
+
 .field {
   border: none;
   position: relative;
   z-index: 1;
   display: inline-block;
   margin: 0 1em 0 0;
-  width: 30%;
   vertical-align: top;
   overflow: hidden;
   font-family: "adelle-sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
