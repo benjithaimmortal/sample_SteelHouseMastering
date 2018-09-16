@@ -1,0 +1,61 @@
+.services-page {
+  margin: 0 auto;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  color: #ececec;
+  font: calc(.6em + 0.5vw) "Helvetica", sans-serif;
+  line-height: calc(0.9em + 0.5vw);
+  text-align: center;
+  display: block;
+}
+
+.serv-txt {
+  display: block;
+  margin-top: 15%;
+  color: black;
+  font: calc(1vw + 0.3rem) "Lato", "Helvetica", sans-serif;
+  padding: 18px;
+}
+
+.services-left {
+  float: left;
+  width: 49%;
+  height: 30vw;
+}
+
+.services-right {
+  float: right;
+  width: 49%;
+  height: 30vw;
+}
+
+.splitter {
+  clear: both;
+  height: 2vw;
+}
+
+.mastering, .stem, .mixing, .sessions {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mastering {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../images/mastering.webp);
+}
+
+.stem {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../images/stem_mastering.webp);
+}
+
+.mixing {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../images/music_equipment.webp);
+}
+
+.sessions {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+  url(../images/production.webp);
+}
